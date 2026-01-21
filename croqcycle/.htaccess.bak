@@ -1,0 +1,27 @@
+# CROQ'CYCLE - Configuration Apache
+# Réécriture d'URL pour des liens propres
+
+# Active le module de réécriture
+RewriteEngine On
+
+# Redirection automatique vers index.php si aucun fichier n'existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1 [QSA,L]
+
+# Page par défaut
+DirectoryIndex index.php
+
+# Compression gzip pour performance (éco-conception)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# Cache des ressources statiques (éco-conception)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+</IfModule>
