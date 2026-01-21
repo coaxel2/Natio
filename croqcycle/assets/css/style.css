@@ -198,8 +198,8 @@ body {
 
 .hero {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    color: white;
-    padding: var(--spacing-xl) var(--spacing-sm);
+    color: red;
+    padding: var(--spacing-x1) var(--spacing-sm);
     text-align: center;
     border-radius: 0px;
     margin-bottom: var(--spacing-xl);
