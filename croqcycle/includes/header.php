@@ -27,8 +27,7 @@
                 <!-- Logo / Nom du site -->
                 <div class="logo">
                     <a href="?page=home" aria-label="Retour à l'accueil de CROQ'CYCLE">
-                        <h1>CROQ'CYCLE</h1>
-                        <p class="tagline">Une écologie qui se sent dans le porte-monnaie</p>
+                        <img src="assets/img/logo.svg" alt="Logo CROQ'CYCLE" class="logo-svg">
                     </a>
                 </div>
 

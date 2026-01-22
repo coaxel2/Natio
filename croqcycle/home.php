@@ -17,9 +17,8 @@ include('includes/header.php');
 <section class="hero">
     <div class="container">
         <h2>CROQ'CYCLE</h2>
-        <p>Une écologie qui se sent dans le porte-monnaie</p>
-        <p>Nourrissez vos animaux tout en respectant la planète grâce à notre système d'économie circulaire</p>
-        <a href="?page=catalog" class="cta-button">Découvrir nos produits</a>
+                <p>Nourrissez vos animaux en respectant la planète grâce à notre système d'économie circulaire</p>
+        <a href="?page=catalog" class="cta-button">Découvrez nos produits</a>
     </div>
 </section>
 

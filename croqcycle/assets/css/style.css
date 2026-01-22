@@ -109,6 +109,12 @@ body {
     color: var(--color-primary);
 }
 
+.logo-svg {
+    height: 60px;
+    width: auto;
+    margin-right: var(--spacing-sm);
+}
+
 .logo h1 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -197,7 +203,7 @@ body {
    ======================================== */
 
 .hero {
-    background-image: url('../img/hero-bg.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/hero-bg.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +212,7 @@ body {
     text-align: center;
     border-radius: 0px;
     margin-bottom: var(--spacing-xl);
-    margin-top: -3.4vh;
+    margin-top: -3.8vh;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -215,13 +221,13 @@ body {
 }
 
 .hero h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: var(--spacing-md);
     line-height: 1.2;
 }
 
 .hero p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: var(--spacing-lg);
     max-width: 50vw;
     margin-left: auto;
@@ -230,23 +236,24 @@ body {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--color-accent);
-    color: white;
-    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: #6b9b37;
+    color: var(--color-text);
+    padding: 1rem 2.5rem;
     text-decoration: none;
     font-weight: 700;
-    border-radius: 4px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 3px solid #6b9b37;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    margin: 0 var(--spacing-sm);
 }
 
 .cta-button:hover,
 .cta-button:focus {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    outline: 3px solid rgba(244, 162, 97, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    outline: none;
 }
 
 /* ========================================
